@@ -28,3 +28,12 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+.dfx/
+target/
+wasms/
+
+**/*.env
+**/*.pem
+
+/src

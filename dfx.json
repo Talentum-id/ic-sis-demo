@@ -1,0 +1,37 @@
+{
+    "canisters": {
+      "assets": {
+        "dependencies": [
+          "ic_sis_provider"
+        ],
+        "frontend": {
+          "entrypoint": "dist/index.html"
+        },
+        "source": [
+          "dist/",
+          "frontend/assets"
+        ],
+        "type": "assets"
+      },
+      "ic_sis_provider": {
+        "type": "custom",
+        "candid": "https://github.com/Talentum-id/ic_sis/releases/latest/download/ic_sis_provider.did",
+        "wasm": "https://github.com/Talentum-id/ic_sis/releases/latest/download/ic_sis_provider.wasm.gz"
+      }
+    },
+    "defaults": {
+      "build": {
+        "args": "",
+        "packtool": ""
+      }
+    },
+    "networks": {
+      "ic": {
+        "providers": [
+          "https://mainnet.dfinity.network"
+        ],
+        "type": "persistent"
+      }
+    },
+    "version": 1
+  }

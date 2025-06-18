@@ -2,12 +2,18 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/frontend/assets/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <title>Sign-In with Sui on ICP</title>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      import {Buffer} from 'buffer';
+    
+      window.global = window
+      window.Buffer = Buffer
+    </script>
+    <script type="module" src="/frontend/main.js"></script>
   </body>
 </html>
